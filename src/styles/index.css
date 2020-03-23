@@ -1,0 +1,10 @@
+#page-container{
+    display: flex;
+    width: 300%;
+    height: 100%;
+    flex-direction: row;
+}
+
+#page{
+    flex-grow: 1;
+}

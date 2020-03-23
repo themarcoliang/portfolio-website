@@ -1,21 +1,27 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import "../styles/index.css"
 
 const IndexPage = () => (
-  <Layout>
+  <Fragment>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div id="page-container">
+      <div id="page" style={{backgroundColor: "blue"}}>
+        <h1 style={{color:"white"}}>This is page 1</h1>
+      </div>
+      <div id="page" style={{backgroundColor: "red"}}>
+        <h1 style={{color:"white"}}>This is page 2</h1>
+      </div>
+      <div id="page" style={{backgroundColor: "yellow"}}>
+        <h1 style={{color:"black"}}>This is page 3</h1>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    {/* <Link to="/page-2/">Go to page 2</Link> */}
+  </Fragment>
 )
 
 export default IndexPage
