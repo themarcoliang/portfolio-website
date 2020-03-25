@@ -5,6 +5,11 @@
     flex-direction: row;
 }
 
-#page{
+#page1{
+    flex-grow: 0;
+    width: 120vw; 
+}
+
+#page2, #page3{
     flex-grow: 1;
 }
