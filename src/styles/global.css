@@ -14,3 +14,13 @@ html {
 ::-webkit-scrollbar {
     display: none;
 }
+
+::selection{
+    background-color: #D8BF4D;
+    color: white;
+}
+
+::-moz-selection{
+    background-color: #D8BF4D;
+    color: white;
+}

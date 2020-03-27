@@ -12,7 +12,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <div id="page-container">
       <div id="page1" className="page" style={{backgroundColor: "#133043"}}>
-        <h1 style={{color:"white"}}>This is page 1</h1>
+        <h1 id="title"style={{color:"white"}}>MARCO LIANG</h1>
       </div>
       <div id="page2" className="page" style={{backgroundColor: "red"}}>
         <h1 style={{color:"white"}}>This is page 2</h1>
