@@ -18,8 +18,33 @@
 }
 
 #title{
+    flex-grow: 1;
+
     font-family: 'Playfair Display', serif;
     font-weight: normal;
     font-size: 100px;
-    transform: translateX(-10vw);
+    /* margin-right: 3vw; */
+    color:white;
+    text-align: center;
+
+}
+
+#subtitle {
+    flex-grow: 1;
+
+    font-family: 'Aleo', serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: white;
+    transform: translate(-15vw, -50px);
+    text-align: right;
+    margin: 200px;
+}
+
+#clock{
+    font-family: 'Aleo', serif;
+    color: #D8BF4D;
+    font-size: 18px;
+    align-self: flex-start;
+    flex-grow: 1;
 }
