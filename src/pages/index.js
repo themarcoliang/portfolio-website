@@ -11,13 +11,20 @@ const IndexPage = () => (
   <Fragment>
     <SEO title="Home" />
     <div id="page-container">
-      <div id="page1" className="page" style={{backgroundColor: "#133043"}}>
-        <h4 id="clock">12:48 AM March 27, 2020</h4>
-        <h1 id="title">MARCO LIANG</h1>
-        <p id="subtitle">3/4th Year Computer Engineering Student<br/>
+      <div id="page1" className="page">
+        <div id="left1">
+          <h4 id="clock">12:48 AM March 27, 2020</h4>
+        </div>
+        <div id="center1">
+          <h1 id="title">MARCO LIANG</h1>
+        </div>
+        <div id="right1">
+          <p id="subtitle">3/4th Year Computer Engineering Student<br/>
            Simon Fraser University<br/>
            Vancouver, Canada</p>
+        </div>
       </div>
+      <div style={{backgroundColor: "#133043", width: "20vw"}}/>
       <div id="page2" className="page" style={{backgroundColor: "red"}}>
         <h1 style={{color:"white"}}>This is page 2</h1>
       </div>
