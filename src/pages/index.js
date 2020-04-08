@@ -16,6 +16,10 @@ function toggleClass(id) {
   // alert(id);
 }
 
+function scrollPage(page){
+  document.getElementById(page).scrollIntoView(true);
+}
+
 const IndexPage = () => (  
   <Fragment>
     <SEO title="Home" />
@@ -47,9 +51,9 @@ const IndexPage = () => (
     </div>
 
     <div class="topnav">
-        <a href="#page1" className="active" id="nav_home" onClick={()=>toggleClass("nav_home")}>MARCO</a>
-        <a href="#page2" id="nav_proj" onClick={()=>toggleClass("nav_proj")}>PROJECTS</a>
-        <a href="#page3" id="nav_exp" onClick={()=>toggleClass("nav_exp")}>EXPERIENCE</a>
+        <a className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</a>
+        <a id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</a>
+        <a id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</a>
         <a>GET IN TOUCH</a>
     </div>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
