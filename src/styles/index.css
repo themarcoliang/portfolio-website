@@ -34,7 +34,7 @@
     flex-grow: 1;
     font-family: 'Playfair Display', serif;
     font-weight: normal;
-    font-size: 5vw;
+    font-size: max(25px, 5vw);
     /* margin-right: 3vw; */
     color:white;
     text-align: center;
