@@ -23,14 +23,25 @@ const IndexPage = () => (
            Simon Fraser University<br/>
            Vancouver, Canada</p>
         </div>
+        
       </div>
-      <div style={{backgroundColor: "#133043", width: "20vw"}}/>
+      
+      {/* <div style={{backgroundColor: "#133043", width: "20vw"}}/> */}
+
       <div id="page2" className="page" style={{backgroundColor: "red"}}>
         <h1 style={{color:"white"}}>This is page 2</h1>
       </div>
+      
       <div id="page3" className="page" style={{backgroundColor: "yellow"}}>
         <h1 style={{color:"black"}}>This is page 3</h1>
       </div>
+    </div>
+
+    <div class="topnav">
+        <a href="#page1">MARCO</a>
+        <a href="#page2">PROJECTS</a>
+        <a href="#page3">EXPERIENCE</a>
+        <a>GET IN TOUCH</a>
     </div>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Fragment>
