@@ -29,14 +29,16 @@ html {
     background-color: transparent;
     position: fixed;
     left: 100px;
-    bottom: 50px;
+    bottom: 10vh;
 }
 
 .topnav a{
     color: white;
     text-align: center;
-    padding: 10px 10px;
+    padding: 0.5vw 0.5vw;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     text-decoration: none;
+    font-size : max(12px, 1vw);
+    /* font-size: 1vw; */
 }
