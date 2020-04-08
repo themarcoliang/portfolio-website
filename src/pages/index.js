@@ -6,6 +6,15 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import "../styles/index.css"
 
+window.nav_active = document.getElementById("nav_home");
+
+function toggleClass(id) {
+  var element = document.getElementById(id);
+  element.classList.toggle("active");
+  window.nav_active.classList.toggle("active");
+  window.nav_active = element;
+  // alert(id);
+}
 
 const IndexPage = () => (  
   <Fragment>
@@ -38,9 +47,9 @@ const IndexPage = () => (
     </div>
 
     <div class="topnav">
-        <a href="#page1">MARCO</a>
-        <a href="#page2">PROJECTS</a>
-        <a href="#page3">EXPERIENCE</a>
+        <a href="#page1" className="active" id="nav_home" onClick={()=>toggleClass("nav_home")}>MARCO</a>
+        <a href="#page2" id="nav_proj" onClick={()=>toggleClass("nav_proj")}>PROJECTS</a>
+        <a href="#page3" id="nav_exp" onClick={()=>toggleClass("nav_exp")}>EXPERIENCE</a>
         <a>GET IN TOUCH</a>
     </div>
     {/* <Link to="/page-2/">Go to page 2</Link> */}
