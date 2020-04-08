@@ -6,13 +6,17 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import "../styles/index.css"
 
-window.nav_active = document.getElementById("nav_home");
+var nav_active;
 
 function toggleClass(id) {
+  if(nav_active == null)
+  {
+    nav_active = document.getElementById("nav_home");
+  }
   var element = document.getElementById(id);
   element.classList.toggle("active");
-  window.nav_active.classList.toggle("active");
-  window.nav_active = element;
+  nav_active.classList.toggle("active");
+  nav_active = element;
   // alert(id);
 }
 
