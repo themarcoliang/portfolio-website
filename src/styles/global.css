@@ -11,6 +11,7 @@ html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
+/* hide the scrollbar */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -29,35 +30,38 @@ html {
     background-color: transparent;
     position: fixed;
     left: 100px;
-    bottom: 10vh;
-    
+    bottom: 10%;
+    /* margin-bottom: 10vh; */
 }
 
-.topnav a{
+.topnav button{
     color: #979797;
+    background-color: transparent;
+    border: none;
+    outline: none;
     text-align: center;
     padding: 0.25vw 0.5vw;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    font-size : max(12px, 1vw);
+    font-family: 'playfair display', sans-serif;
+    /* font-weight: 500; */
+    /* text-decoration: none; */
+    font-size : max(12px, 0.8vw);
     cursor: pointer;
 }
 
-@keyframes turnwhite {
+@keyframes turn_white {
     from {}
     to {color: white}
 }
 
-.topnav a:hover {
+.topnav button:hover {
     /* border-top : 1px solid; */
-    animation-name: turnwhite;
+    animation-name: turn_white;
     animation-duration: 0.75s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
 }
 
-.topnav a.active {
+.topnav button.active {
     color: white;
 }

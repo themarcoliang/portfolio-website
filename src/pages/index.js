@@ -5,6 +5,8 @@ import React, { Fragment } from "react"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import "../styles/index.css"
+import stairs from "../images/stairs.png"
+// import Img from "gatsby-image"
 
 var nav_active;
 
@@ -34,8 +36,8 @@ const IndexPage = () => (
         </div>
         <div id="center1">
           <div id="container">
-            <img src="/stairs.png" alt="stairs" id="stairspic"/>
-            <h1 id="title">MARCO &emsp; <br/>&emsp;LIANG</h1>
+            <img src={stairs} alt="stairs" id="stairspic"/>
+            <h1 id="title">MARCO &emsp;<br/>&emsp;LIANG</h1>
           </div>
         </div>
         <div id="right1">
@@ -47,7 +49,33 @@ const IndexPage = () => (
       {/* <div style={{backgroundColor: "#133043", width: "20vw"}}/> */}
 
       <div id="page2" className="page">
-        <h1>This is page 2</h1>
+        <p id="about_me">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Praesent euismod mauris placerat neque rutrum, et 
+          volutpat purus porta. Curabitur egestas in erat nec cursus. 
+          Nullam et velit id lorem tincidunt aliquet. Sed aliquam 
+          rutrum laoreet. Aliquam ut nunc rutrum, auctor nulla eu, 
+          interdum ex. Quisque sit amet tincidunt libero, id pretium 
+          leo. Pellentesque dictum molestie augue, a condimentum 
+          est vulputate at.
+          <br/><br/>
+          Duis egestas interdum enim non elementum. Sed euismod 
+          ipsum vel lectus interdum auctor eget quis turpis. Nulla 
+          varius, ipsum sed eleifend commodo, urna ex pulvinar 
+          risus, ac vehicula tellus neque a lacus. In iaculis venenatis 
+          suscipit. Nunc sit amet erat a odio dapibus vestibulum 
+          dapibus id arcu. Pellentesque egestas sem ut tortor dictum, 
+        </p>
+
+        <h2 id="project_start_date">3 22 2020.</h2>
+
+        <p id="project_start"> 
+            The day I started this project.
+            <br/><br/>
+            Originally, I just wanted a simple portfolio site,
+            but as time went on, it became clear that I'll never
+            be quite finished with it
+        </p>
       </div>
       
       <div id="page3" className="page">
@@ -56,12 +84,11 @@ const IndexPage = () => (
     </div>
 
     <div class="topnav">
-        <a className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</a>
-        <a id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</a>
-        <a id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</a>
-        <a>GET IN TOUCH</a>
+        <button className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</button>
+        <button id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</button>
+        <button id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</button>
+        <button>GET IN TOUCH</button>
     </div>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Fragment>
 )
 
