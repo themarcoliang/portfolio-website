@@ -6,8 +6,6 @@ import React, { Fragment } from "react"
 import SEO from "../components/seo"
 import "../styles/index.css"
 import stairs from "../images/stairs.png"
-import "animate.css/animate.min.css"
-import ScrollAnimation from 'react-animate-on-scroll';
 // import Img from "gatsby-image"
 
 var nav_active;
