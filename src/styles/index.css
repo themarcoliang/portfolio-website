@@ -45,7 +45,15 @@
         align-self: center;
         margin-right: 5vw;
     }
-    
+    #subtitle:hover span {
+        display: none
+    }
+    #subtitle:hover:after {
+        content:"yeet";
+        text-align: right;
+        color: #CFA289;
+    }
+
     #clock{
         flex-grow: 1;
         font-family: 'Aleo', serif;
