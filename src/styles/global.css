@@ -30,8 +30,7 @@ html {
     background-color: transparent;
     position: fixed;
     left: 100px;
-    bottom: 10%;
-    /* margin-bottom: 10vh; */
+    bottom: 5%;
 }
 
 .topnav button{

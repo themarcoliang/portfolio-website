@@ -28,14 +28,14 @@ function scrollPage(page){
 
 const IndexPage = () => (  
   <Fragment>
-    <SEO title="Home" />
+    <SEO title="Home Page" />
     <div id="page-container">
       <div id="page1" className="page">
         <div id="left1">
           {/* <h4 id="clock">12:48 AM March 27, 2020</h4> */}
         </div>
         <div id="center1">
-          <div id="container">
+          <div id="title_container">
             <img src={stairs} alt="stairs" id="stairspic"/>
             <h1 id="title">MARCO &emsp;<br/>&emsp;LIANG</h1>
           </div>
@@ -46,8 +46,6 @@ const IndexPage = () => (
         
       </div>
       
-      {/* <div style={{backgroundColor: "#133043", width: "20vw"}}/> */}
-
       <div id="page2" className="page">
         <p id="about_me">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -82,13 +80,13 @@ const IndexPage = () => (
         <h1>This is page 3</h1>
       </div>
     </div>
-
+    
     <div class="topnav">
         <button className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</button>
         <button id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</button>
         <button id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</button>
         <button>GET IN TOUCH</button>
-    </div>
+    </div> 
   </Fragment>
 )
 
