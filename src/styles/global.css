@@ -54,13 +54,60 @@ html {
 
 .topnav button:hover {
     /* border-top : 1px solid; */
-    animation-name: turn_white;
-    animation-duration: 0.75s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
+    animation: turn_white 0.75s ease-in-out 0s infinite alternate;
 }
 
 .topnav button.active {
     color: white;
 }
+
+.loaded #title{
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.loaded #subtitle{
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+}
+
+.loaded #stairs_pic{
+    -webkit-animation: fade-in-50 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: fade-in-50 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
+
+@-webkit-keyframes fade-in-50 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+@keyframes fade-in-50 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+}  
+  

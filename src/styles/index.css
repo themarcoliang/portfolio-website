@@ -33,30 +33,17 @@
     #left1, #right1{
         width: 20%;
     }
-    
-    #title{
-        /* flex-grow: 1; */
-        /* position: relative; */
-        font-family: 'Playfair Display', serif;
-        font-weight: normal;
-        font-size: max(25px, 5vw);
-        margin: 0 0 0 0;
-        /* margin-right: 3vw; */
-        color:white;
-        text-align: center;
-        /* align-self: center; */
-        transform: translateY(-125%);
-    }
-    
-    #subtitle {
+        
+    #subtitle{
         flex-grow: 1;
         font-family: 'lora', serif;
         font-size: max(15px, 1vw);
         line-height : 1.2;
         color: white;
-        transform: translate(-5vw, 0);
+        /* transform: translate(-5vw, 0); */
         text-align: right;
         align-self: center;
+        margin-right: 5vw;
     }
     
     #clock{
@@ -79,12 +66,32 @@
         align-self: center;
     }
     
-    #stairspic{
+    #stairs_pic{
+        /* position: absolute; */
         width: max(100px, 22vw);
         align-content: center;
-        transform: translateY(25%);
+        /* transform: translateY(25%); */
         opacity: 0.5;
         margin: 0 0 0 0;
+        /* z-index: 2; */
+    }
+
+    #title{
+        /* flex-grow: 1; */
+        /* position: relative; */
+        position: absolute;
+        font-family: 'Playfair Display', serif;
+        font-weight: normal;
+        font-size: max(25px, 5vw);
+        margin: 0 0 0 0;
+        bottom: 25%;
+        left: -20%;
+        /* margin-right: 3vw; */
+        color:white;
+        text-align: center;
+        /* align-self: center; */
+        /* transform: translateY(-125%); */
+        /* z-index: 1; */
     }
     
     #about_me{

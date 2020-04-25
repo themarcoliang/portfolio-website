@@ -6,9 +6,14 @@ import React, { Fragment } from "react"
 import SEO from "../components/seo"
 import "../styles/index.css"
 import stairs from "../images/stairs.png"
+import "animate.css/animate.min.css"
+import ScrollAnimation from 'react-animate-on-scroll';
 // import Img from "gatsby-image"
 
 var nav_active;
+window.addEventListener("load", ()=> {
+  document.querySelector("body").classList.add("loaded");
+});
 
 function toggleClass(id) {
   if(nav_active == null)
@@ -35,13 +40,14 @@ const IndexPage = () => (
           {/* <h4 id="clock">12:48 AM March 27, 2020</h4> */}
         </div>
         <div id="center1">
-          <div id="title_container">
-            <img src={stairs} alt="stairs" id="stairspic"/>
-            <h1 id="title">MARCO &emsp;<br/>&emsp;LIANG</h1>
-          </div>
+            <div id="title_container">
+                <img src={stairs} alt="stairs" id="stairs_pic"/>
+                <h1 id="title">MARCO &emsp;<br/>&emsp;LIANG</h1>
+            </div>
         </div>
+        
         <div id="right1">
-          <p id="subtitle">welcome.</p>
+          <p id="subtitle" className="label new-label"><span>welcome.</span></p>
         </div>
         
       </div>
