@@ -45,9 +45,11 @@
         align-self: center;
         margin-right: 5vw;
     }
+
     #subtitle:hover span {
         display: none
     }
+
     #subtitle:hover:after {
         content:"yeet";
         text-align: right;
@@ -100,6 +102,7 @@
         /* align-self: center; */
         /* transform: translateY(-125%); */
         /* z-index: 1; */
+        
     }
     
     #about_me{

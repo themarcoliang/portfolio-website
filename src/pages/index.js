@@ -1,6 +1,5 @@
 import React, { Fragment } from "react"
 // import { Link } from "gatsby"
-
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
@@ -40,7 +39,7 @@ const IndexPage = () => (
         <div id="center1">
             <div id="title_container">
                 <img src={stairs} alt="stairs" id="stairs_pic"/>
-                <h1 id="title">MARCO &emsp;<br/>&emsp;LIANG</h1>
+                <h1 id="title"><span>MARCO &emsp;<br/>&emsp;LIANG</span></h1>
             </div>
         </div>
         
