@@ -7,12 +7,19 @@ import "../styles/index.css"
 import stairs from "../images/stairs.png"
 // import Img from "gatsby-image"
 
+var nav_active;
+
 //can be removed later
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-var nav_active;
+function noScroll() {
+  window.scrollTo(0,0);
+}
+
+window.addEventListener('scroll', noScroll);
+
 window.addEventListener("load", async ()=> {
   await sleep(5000);
   var el = document.getElementById("loader");
@@ -29,6 +36,7 @@ window.addEventListener("load", async ()=> {
       el.style.bottom = pos + "vh";
     }
   }
+  window.removeEventListener('scroll', noScroll);
   document.querySelector("body").classList.add("loaded");
 });
 
