@@ -7,8 +7,28 @@ import "../styles/index.css"
 import stairs from "../images/stairs.png"
 // import Img from "gatsby-image"
 
+//can be removed later
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 var nav_active;
-window.addEventListener("load", ()=> {
+window.addEventListener("load", async ()=> {
+  await sleep(5000);
+  var el = document.getElementById("loader");
+  var pos = 0;
+  var id = setInterval(frame, 0.5);
+  function frame() {
+    if(pos == 100){
+      el.style.display = "none";
+      clearInterval(id);
+    }
+    else
+    {
+      pos++;
+      el.style.bottom = pos + "vh";
+    }
+  }
   document.querySelector("body").classList.add("loaded");
 });
 
@@ -31,6 +51,10 @@ function scrollPage(page){
 const IndexPage = () => (  
   <Fragment>
     <SEO title="Home Page" />
+    <div id="loader">
+        <h1>loading</h1>
+    </div>
+
     <div class="page-container">
       <div id="page1" className="page">
         <div id="left1">
@@ -97,11 +121,11 @@ const IndexPage = () => (
     </div>
 
     <div class="topnav">
-        <button className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</button>
-        <button id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</button>
-        <button id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</button>
-        <button>GET IN TOUCH</button>
-    </div> 
+          <button className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</button>
+          <button id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</button>
+          <button id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</button>
+          <button>GET IN TOUCH</button>
+      </div>           
   </Fragment>
 )
 

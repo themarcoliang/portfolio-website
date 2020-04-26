@@ -11,6 +11,22 @@ html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
+#loader{
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+
+#loader h1{
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  text-align: center;
+}
+
 /* hide the scrollbar */
 ::-webkit-scrollbar {
     display: none;
@@ -30,7 +46,11 @@ html {
     background-color: transparent;
     position: fixed;
     left: 100px;
-    bottom: 5%;
+    bottom: 10%;
+    z-index: 2;
+
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
 }
 
 .topnav button{
@@ -47,13 +67,9 @@ html {
     cursor: pointer;
 }
 
-@keyframes turn_white {
-    from {}
-    to {color: white}
-}
-
 .topnav button:hover {
     /* border-top : 1px solid; */
+    -webkit-animation: turn_white 0.75s ease-in-out 0s infinite alternate;
     animation: turn_white 0.75s ease-in-out 0s infinite alternate;
 }
 
@@ -93,6 +109,16 @@ html {
 .loaded .dots span:nth-child(2) {
   -webkit-animation: fade-in 1.2s linear 1.5s both;
   animation: fade-in 1.2s linear 1.5s both;
+}
+
+@-webkit-keyframes turn_white {
+  from {}
+  to {color: white}
+}
+
+@keyframes turn_white {
+  from {}
+  to {color: white}
 }
 
 @-webkit-keyframes wipe-to-right {

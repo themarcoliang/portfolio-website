@@ -4,6 +4,8 @@
         width: 300%;
         height: 100%;
         flex-direction: row;
+        position: absolute;
+        /* z-index: 1; */
     }
     
     #page1{
@@ -74,6 +76,7 @@
         text-align: center;
         /* margin-top: max(0, 50%); */
         align-self: center;
+        /* opacity: 0; */
     }
     
     #stairs_pic{
@@ -138,7 +141,6 @@
         align-self: center;
         margin-top: 10vw;
         margin-bottom: 10vh;
-        /* flex-gorw: 0; */
     }
 
     .lines hr{
@@ -147,7 +149,6 @@
         position: absolute;
         bottom: 20%;
         border-width: 1px;
-        /* clip-path: inset(0 0. 0 0); */
     }
 
     .lines hr:nth-child(1)
