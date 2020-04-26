@@ -9,7 +9,6 @@ import stairs from "../images/stairs.png"
 
 var nav_active;
 
-//can be removed later
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -21,12 +20,12 @@ function noScroll() {
 window.addEventListener('scroll', noScroll);
 
 window.addEventListener("load", async ()=> {
-  await sleep(5000);
+  await sleep(500);
   var el = document.getElementById("loader");
   var pos = 0;
   var id = setInterval(frame, 0.5);
   function frame() {
-    if(pos == 100){
+    if(pos === 100){
       el.style.display = "none";
       clearInterval(id);
     }
@@ -60,7 +59,7 @@ const IndexPage = () => (
   <Fragment>
     <SEO title="Home Page" />
     <div id="loader">
-        <h1>loading</h1>
+        <h1>Loading...</h1>
     </div>
 
     <div class="page-container">
@@ -103,11 +102,9 @@ const IndexPage = () => (
         <h2 id="project_start_date">3 22 2020.</h2>
 
         <p id="project_start"> 
-            The day I started this project.
+            For Fuck's Sakes
             <br/><br/>
-            Originally, I just wanted a simple portfolio site,
-            but as time went on, it became clear that I'll never
-            be quite finished with it
+            Change this to some less cringey BS
         </p>
       </div>
       
