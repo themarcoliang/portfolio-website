@@ -84,6 +84,12 @@ const IndexPage = () => (
       </div>
     </div>
     
+    <div id="lines">
+      <hr noshade="noshade"></hr>
+      <hr noshade="noshade"></hr>
+      <hr noshade="noshade"></hr>
+    </div>
+
     <div class="topnav">
         <button className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</button>
         <button id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</button>

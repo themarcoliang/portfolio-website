@@ -82,19 +82,23 @@ html {
 
 @-webkit-keyframes wipe {
 	0% {
-		clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
 	}
 	100% {
-		clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+    opacity: 0.5;
 	}
 }
 
 @keyframes wipe {
 	0% {
-		clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
 	}
 	100% {
-		clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+    opacity: 0.5;
 	}
 }
 

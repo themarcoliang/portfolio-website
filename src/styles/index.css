@@ -125,6 +125,7 @@
         align-self: center;
         margin-left: 20vw;
         width: max(250pt, 20vw);
+        margin-bottom: 10vh;
         /* flex-grow: 0; */
     }
     
@@ -136,6 +137,32 @@
         /* transform: translate(90%, -180%); */
         align-self: center;
         margin-top: 10vw;
+        margin-bottom: 10vh;
         /* flex-gorw: 0; */
+    }
+
+    #lines hr{
+        width: 50vw;
+        border-color: #CFA289;
+        position: absolute;
+        bottom: 20%;
+        /* right: -20%; */
+        border-width: 1px;
+    }
+
+    #lines hr:nth-child(1)
+    {
+        right: -20%;
+    }
+
+    #lines hr:nth-child(2)
+    {
+        right: -100%;
+    }
+
+    #lines hr:nth-child(3)
+    {
+        width: 30vw;
+        right: -180%;
     }
 }
