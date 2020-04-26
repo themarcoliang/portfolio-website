@@ -1,5 +1,5 @@
 @media(hover: hover){
-    #page-container{
+    .page-container{
         display: flex;
         width: 300%;
         height: 100%;
@@ -141,28 +141,48 @@
         /* flex-gorw: 0; */
     }
 
-    #lines hr{
+    .lines hr{
         width: 50vw;
         border-color: #CFA289;
         position: absolute;
         bottom: 20%;
-        /* right: -20%; */
         border-width: 1px;
     }
 
-    #lines hr:nth-child(1)
+    .lines hr:nth-child(1)
     {
         right: -20%;
     }
 
-    #lines hr:nth-child(2)
+    .lines hr:nth-child(2)
     {
         right: -100%;
     }
 
-    #lines hr:nth-child(3)
+    .lines hr:nth-child(3)
     {
         width: 30vw;
         right: -180%;
+    }
+
+    .dots span{
+        background-color: #CFA289;
+        position: absolute;
+        bottom: calc(20% + 6px);
+        border-radius: 100%;
+        width: 5px;
+        height: 5px;
+    }
+
+    .dots span:nth-child(1){
+        right: 35%;
+    }
+
+    .dots span:nth-child(2){
+        right: 37%;
+    }
+
+    .dots span:nth-child(3){
+        right: -105%;
     }
 }

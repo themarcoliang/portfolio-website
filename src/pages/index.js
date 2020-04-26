@@ -31,7 +31,7 @@ function scrollPage(page){
 const IndexPage = () => (  
   <Fragment>
     <SEO title="Home Page" />
-    <div id="page-container">
+    <div class="page-container">
       <div id="page1" className="page">
         <div id="left1">
           {/* <h4 id="clock">12:48 AM March 27, 2020</h4> */}
@@ -84,10 +84,16 @@ const IndexPage = () => (
       </div>
     </div>
     
-    <div id="lines">
+    <div class="lines">
       <hr noshade="noshade"></hr>
       <hr noshade="noshade"></hr>
       <hr noshade="noshade"></hr>
+    </div>
+
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
 
     <div class="topnav">
