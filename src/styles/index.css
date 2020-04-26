@@ -147,6 +147,7 @@
         position: absolute;
         bottom: 20%;
         border-width: 1px;
+        /* clip-path: inset(0 0. 0 0); */
     }
 
     .lines hr:nth-child(1)

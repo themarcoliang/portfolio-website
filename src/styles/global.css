@@ -69,18 +69,33 @@ html {
 }
 
 .loaded #subtitle{
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
-    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
 }
 
 .loaded #stairs_pic{
     /* -webkit-animation: fade-in-50 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: fade-in-50 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
-    -webkit-animation: wipe 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
-    animation: wipe 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both; 
+    -webkit-animation: wipe-to-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
+    animation: wipe-to-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both; 
 }
 
-@-webkit-keyframes wipe {
+.loaded .lines hr{
+    -webkit-animation: wipe-to-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: wipe-to-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
+}
+
+.loaded .dots span:nth-child(1) {
+    -webkit-animation: fade-in 1.2s linear 0.5s both;
+    animation: fade-in 1.2s linear 0.5s both;
+}
+
+.loaded .dots span:nth-child(2) {
+  -webkit-animation: fade-in 1.2s linear 1.5s both;
+  animation: fade-in 1.2s linear 1.5s both;
+}
+
+@-webkit-keyframes wipe-to-right {
 	0% {
     clip-path: inset(0 100% 0 0);
     opacity: 0;
@@ -91,7 +106,7 @@ html {
 	}
 }
 
-@keyframes wipe {
+@keyframes wipe-to-right {
 	0% {
     clip-path: inset(0 100% 0 0);
     opacity: 0;
@@ -99,6 +114,24 @@ html {
 	100% {
     clip-path: inset(0 0 0 0);
     opacity: 0.5;
+	}
+}
+
+@-webkit-keyframes wipe-to-left {
+	0% {
+    clip-path: inset(0 0 0 100%);
+	}
+	100% {
+    clip-path: inset(0 0 0 0);
+	}
+}
+
+@keyframes wipe-to-left {
+	0% {
+    clip-path: inset(0 0 0 100%);
+	}
+	100% {
+    clip-path: inset(0 0 0 0);
 	}
 }
 
