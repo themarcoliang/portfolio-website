@@ -18,27 +18,27 @@ function noScroll() {
 }
 
 window.addEventListener('scroll', noScroll);
-
-window.addEventListener("load", async ()=> {
+window.addEventListener("pageshow", async ()=> {
   await sleep(500);
-  var el = document.getElementById("loader");
-  var pos = 0;
-  var id = setInterval(frame, 0.5);
-  function frame() {
-    if(pos === 100){
-      el.style.display = "none";
-      clearInterval(id);
-    }
-    else
-    {
-      pos++;
-      el.style.bottom = pos + "vh";
-    }
-  }
+  // var el = document.getElementById("loader");
+  // var pos = 0;
+  // var id = setInterval(frame, 0.5);
+  // function frame() {
+  //   if(pos === 100){
+  //     el.style.display = "none";
+  //     clearInterval(id);
+  //   }
+  //   else
+  //   {
+  //     pos++;
+  //     el.style.bottom = pos + "vh";
+  //   }
+  // }
   
   document.querySelector("body").classList.add("loaded");
   window.removeEventListener('scroll', noScroll);
 });
+
 
 function toggleClass(id) {
   if(nav_active == null)
@@ -108,11 +108,10 @@ const IndexPage = () => (
             Change this to some less cringey BS
         </p>
 
-        <p>
+        <p id="project_link">
             To learn more about some of my other projects,
-            <br/>
-            press 
-            <Link>here</Link>
+            <br/>press &nbsp;
+            <Link to="/page-2" style={{color:"white"}} activeStyle={{color:"red"}}>here</Link>
         </p>
       </div>
       

@@ -30,9 +30,9 @@ html {
 }
 
 /* hide the scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 ::selection{
     background-color: #D8BF4D;
@@ -79,6 +79,12 @@ html {
     color: white;
 }
 
+.loaded #loader{
+    /* display: none; */
+    -webkit-animation: slide-out-top 1s ease-out both;
+    animation: slide-out-top 1s ease-out both; 
+}
+
 .loaded #title{
     -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
     animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
@@ -87,15 +93,15 @@ html {
 }
 
 .loaded #subtitle{
-    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
-    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2.5s both;
 }
 
 .loaded #stairs_pic{
     /* -webkit-animation: fade-in-50 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: fade-in-50 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
-    -webkit-animation: wipe-to-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both;
-    animation: wipe-to-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s both; 
+    -webkit-animation: wipe-to-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: wipe-to-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 }
 
 .loaded .lines hr{
@@ -197,4 +203,30 @@ html {
       opacity: 0.5;
     }
 }  
-  
+
+@-webkit-keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* opacity: 1; */
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    /* opacity: 0; */
+    display: none;
+  }
+}
+
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* opacity: 1; */
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    /* opacity: 0; */
+  }
+}

@@ -149,6 +149,18 @@
         margin-bottom: 10vh;
     }
 
+    #project_link{
+        color:white;
+        text-align: right;
+        font-family: "Lora";
+    }
+
+    #project_link Link{
+        color:white;
+        text-align: right;
+        font-family: "Lora";
+    }
+
     .lines hr{
         width: 50vw;
         border-color: #CFA289;
