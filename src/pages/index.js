@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 // import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
@@ -35,8 +35,9 @@ window.addEventListener("load", async ()=> {
       el.style.bottom = pos + "vh";
     }
   }
-  window.removeEventListener('scroll', noScroll);
+  
   document.querySelector("body").classList.add("loaded");
+  window.removeEventListener('scroll', noScroll);
 });
 
 function toggleClass(id) {
@@ -59,7 +60,7 @@ const IndexPage = () => (
   <Fragment>
     <SEO title="Home Page" />
     <div id="loader">
-        <h1>Loading...</h1>
+        <h1>loading...</h1>
     </div>
 
     <div class="page-container">
@@ -106,9 +107,16 @@ const IndexPage = () => (
             <br/><br/>
             Change this to some less cringey BS
         </p>
+
+        <p>
+            To learn more about some of my other projects,
+            <br/>
+            press 
+            <Link>here</Link>
+        </p>
       </div>
       
-      <div id="page3" className="page">
+      <div id="Contact Me" className="page">
         <h1>This is page 3</h1>
       </div>
     </div>

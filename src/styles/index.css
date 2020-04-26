@@ -19,11 +19,17 @@
         flex-direction: row;
     }
     
-    #page2, #page3{
+    #page2{
         flex-grow: 1;
-        width: 100vw;
+        width: 200vw;
         background-color: black;
         display: flex;
+    }
+
+    #page3{
+        flex-grow: 1;
+        width: 100vw;
+        background-color: #CFA289;
     }
     
     #left1, #center1, #right1{
