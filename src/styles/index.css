@@ -1,7 +1,7 @@
 @media(hover: hover){
     .page-container{
         display: flex;
-        width: 300%;
+        /* width: 300%; */
         height: 100%;
         flex-direction: row;
         position: absolute;
@@ -10,7 +10,7 @@
     
     #page1{
         display: flex;
-        flex-grow: 1;
+        /* flex-grow: 1; */
         width: 100vw; 
         justify-content: center;
         align-items: center;
@@ -20,25 +20,25 @@
     }
     
     #page2{
-        flex-grow: 1;
+        /* flex-grow: 1; */
         width: 200vw;
         background-color: black;
         display: flex;
     }
 
     #page3{
-        flex-grow: 1;
-        width: 100vw;
+        /* flex-grow: 1; */
+        width: 105vw;
         background-color: #CFA289;
     }
     
-    #left1, #center1, #right1{
+    #left, #center, #right{
         display: flex;
         flex-grow: 1;
         height: 100%;
     }
     
-    #left1, #right1{
+    #left, #right{
         width: 20%;
     }
         

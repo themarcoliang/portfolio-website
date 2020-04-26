@@ -65,17 +65,17 @@ const IndexPage = () => (
 
     <div class="page-container">
       <div id="page1" className="page">
-        <div id="left1">
+        <div id="left">
           {/* <h4 id="clock">12:48 AM March 27, 2020</h4> */}
         </div>
-        <div id="center1">
+        <div id="center">
             <div id="title_container">
                 <img src={stairs} alt="stairs" id="stairs_pic"/>
                 <h1 id="title"><span>MARCO &emsp;<br/>&emsp;LIANG</span></h1>
             </div>
         </div>
         
-        <div id="right1">
+        <div id="right">
           <p id="subtitle" className="label new-label"><span>welcome.</span></p>
         </div>
         
@@ -116,7 +116,7 @@ const IndexPage = () => (
         </p>
       </div>
       
-      <div id="Contact Me" className="page">
+      <div id="page3" className="page">
         <h1>This is page 3</h1>
       </div>
     </div>
