@@ -5,10 +5,12 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import "../styles/index.css"
 import stairs from "../images/stairs.png"
+import moon from "../images/moon.jpg"
 // import Img from "gatsby-image"
 
 var nav_active;
 
+// Can be removed later
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -19,7 +21,7 @@ function noScroll() {
 
 window.addEventListener('scroll', noScroll);
 window.addEventListener("pageshow", async ()=> {
-  await sleep(500);
+  await sleep(500); //for debugging
   // var el = document.getElementById("loader");
   // var pos = 0;
   // var id = setInterval(frame, 0.5);
@@ -108,11 +110,16 @@ const IndexPage = () => (
             Change this to some less cringey BS
         </p>
 
-        <p id="project_link">
-            To learn more about some of my other projects,
-            <br/>press &nbsp;
-            <Link to="/page-2" style={{color:"white"}} activeStyle={{color:"red"}}>here</Link>
-        </p>
+        <div id="moon_container">
+          <img src={moon} alt="stairs" id="moon_pic"/>
+          
+          <p id="project_link">
+              To learn more about some of my other projects,
+              <br/>press &nbsp;
+              <Link to="/page-2" style={{color:"white"}} activeStyle={{color:"red"}}>here</Link>
+          </p>
+        </div>
+        
       </div>
       
       <div id="page3" className="page">

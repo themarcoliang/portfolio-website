@@ -153,12 +153,30 @@
         color:white;
         text-align: right;
         font-family: "Lora";
+        align-self: center;
+        margin-top: 5vw;
+        /* margin-left: 40vw; */
+        font-size: max(8px, 0.85vw);
     }
 
     #project_link Link{
         color:white;
         text-align: right;
         font-family: "Lora";
+    }
+
+    #moon_container{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 80%;
+    }
+
+    #moon_pic {
+        align-self: center;
+        max-width: 30%;
+        height: auto;
     }
 
     .lines hr{
