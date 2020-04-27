@@ -123,6 +123,7 @@
         margin-left: 10vw;
         flex-shrink: 0;
         font-family: 'Lora';
+        width: 10%;
     }
     
     #project_start_date{
@@ -169,14 +170,15 @@
         align-self: center;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 40%;
         height: 80%;
     }
 
     #moon_pic {
         align-self: center;
-        max-width: 30%;
+        max-width: 40%;
         height: auto;
+        margin-left: 50%;
     }
 
     .lines hr{
