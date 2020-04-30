@@ -23,20 +23,6 @@ function noScroll() {
 window.addEventListener('scroll', noScroll);
 window.addEventListener("pageshow", async ()=> {
   await sleep(500); //for debugging
-  // var el = document.getElementById("loader");
-  // var pos = 0;
-  // var id = setInterval(frame, 0.5);
-  // function frame() {
-  //   if(pos === 100){
-  //     el.style.display = "none";
-  //     clearInterval(id);
-  //   }
-  //   else
-  //   {
-  //     pos++;
-  //     el.style.bottom = pos + "vh";
-  //   }
-  // }
   
   document.querySelector("body").classList.add("loaded");
   window.removeEventListener('scroll', noScroll);
@@ -162,7 +148,7 @@ const IndexPage = () => (
           <button className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</button>
           <button id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</button>
           <button id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</button>
-          <button>GET IN TOUCH</button>
+          <button id="nav_contact" onClick={()=>{toggleClass("nav_contact"); scrollPage("page3")}}>GET IN TOUCH</button>
       </div>           
   </Fragment>
 )
