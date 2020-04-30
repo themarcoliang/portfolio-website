@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import "../styles/index.css"
 import stairs from "../images/stairs.png"
 import moon from "../images/moon.jpg"
+import architecture from "../images/architecture.jpg"
 // import Img from "gatsby-image"
 
 var nav_active;
@@ -123,7 +124,25 @@ const IndexPage = () => (
       </div>
       
       <div id="page3" className="page">
-        <h1>This is page 3</h1>
+        <div id="contact_container">
+          <h1 id="contact_header">This is a work in progress<br/>See something broken? Something you don't like? <br/>Let me know!</h1>
+
+          <form id="contact_form" action="https://getform.io/f/7f1db3f9-c8ee-4d12-a6a5-3f3c05604cd3" method="POST">
+            
+            <input id="email_field" type="email" name="email" placeholder="email" required/>
+            {/* <label for="email_field">email</label> */}
+            <br/>
+            <input id="name_field" type="text" name="name" placeholder="name" required/>
+            {/* <label for="name_field">name</label> */}
+            <br/>
+            <input id="comment_field" type="text" name="comment" placeholder="comment" required/>
+            {/* <label for="message_field">message</label> */}
+            <br/>
+            <button type="submit">submit</button>
+          </form>
+          
+        </div>
+        <img src={architecture} alt="architecture" id="architecture_pic"/>
       </div>
     </div>
     

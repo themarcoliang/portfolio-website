@@ -25,12 +25,6 @@
         background-color: black;
         display: flex;
     }
-
-    #page3{
-        /* flex-grow: 1; */
-        width: 105vw;
-        background-color: #CFA289;
-    }
     
     #left, #center, #right{
         display: flex;
@@ -179,6 +173,75 @@
         max-width: 40%;
         height: auto;
         margin-left: 50%;
+    }
+
+    #page3{
+        /* flex-grow: 1; */
+        width: 105vw;
+        background-color: #CFA289;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact_container{
+        display: block;
+        text-align: center;
+    }
+
+    #contact_header{
+        color: white;
+        font-family: 'Playfair Display', serif;
+        font-weight: normal;
+        font-size: max(15px, 1.5vw);
+        /* text-align: center; */
+        margin-top: 10%;
+    }
+
+    #contact_form{
+        font-family: 'Lora', serif;
+        font-weight: normal;
+        font-size: max(12px, 1vw);
+        color: white;
+        margin-top: 5vh;
+    }
+
+    #contact_form input{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid white;
+        font-size: max(8px, 1vw);
+        color: white;
+        font-family: 'Lora', serif;
+        outline: none;
+        width: 15vw;
+        line-height: 5vh;
+    }
+
+    #contact_form input::placeholder{
+        text-align: right;
+        color: white;
+        align-items: baseline;
+    }
+
+    #contact_form button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        line-height: 5vh;
+        color: white;
+        font-size: max(8px, 1vw);
+        font-family: 'Lora', serif;
+    }
+
+    #contact_form button:hover{
+        text-decoration: underline;
+    }
+
+    #architecture_pic{
+        width: 15vw;
+        margin-left: 10vw;
     }
 
     .lines hr{

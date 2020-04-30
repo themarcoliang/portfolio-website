@@ -29,11 +29,6 @@ html {
   font-weight: 400;
 }
 
-/* hide the scrollbar */
-/* ::-webkit-scrollbar {
-    display: none;
-} */
-
 ::selection{
     background-color: #D8BF4D;
     color: white;
