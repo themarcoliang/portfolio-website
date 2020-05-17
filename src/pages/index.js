@@ -82,7 +82,9 @@ const IndexPage = () => (
           dapibus id arcu. Pellentesque egestas sem ut tortor dictum, 
         </p>
         <Link id="about_me_link" to="/page-2">
-          About
+          <span>
+            about
+          </span>
         </Link>
       </div>
       <div id="page3" className="page">
@@ -92,7 +94,11 @@ const IndexPage = () => (
             more about web development
         </p>
 
-        <Link id="project_link" to="/page-2">View Other Work</Link>
+        <Link id="project_link" to="/page-2">
+          <span>
+            view
+          </span>
+        </Link>
       
       </div>
 
@@ -122,7 +128,7 @@ const IndexPage = () => (
           <button className="active" id="nav_home" onClick={()=>{toggleClass("nav_home"); scrollPage("page1")}}>MARCO</button>
           <button id="nav_proj" onClick={()=>{toggleClass("nav_proj"); scrollPage("page2")}}>PROJECTS</button>
           <button id="nav_exp" onClick={()=>{toggleClass("nav_exp"); scrollPage("page3")}}>EXPERIENCE</button>
-          <button id="nav_contact" onClick={()=>{toggleClass("nav_contact"); scrollPage("page3")}}>GET IN TOUCH</button>
+          <button id="nav_contact" onClick={()=>{toggleClass("nav_contact"); scrollPage("page4")}}>GET IN TOUCH</button>
       </div>           
   </Fragment>
 )

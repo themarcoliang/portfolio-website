@@ -4,12 +4,10 @@
         height: 100%;
         flex-direction: row;
         position: absolute;
-        scroll-snap-type: x mandatory;
         overflow-x: scroll;
     }
 
     .page{
-        scroll-snap-align: center;
         width: 100vw;
         display: flex;
         background-color:black;
@@ -34,7 +32,8 @@
         /* transform: translate(-5vw, 0); */
         text-align: right;
         align-self: center;
-        margin-right: 5vw;
+        margin-right: 10vw;
+        width: 1vw;
     }
 
     #subtitle:hover span {
@@ -47,17 +46,6 @@
         color: #CFA289;
     }
 
-    #clock{
-        flex-grow: 1;
-        font-family: 'Aleo', serif;
-        color: #D8BF4D;
-        font-size: max(12px, 0.75vw);
-        text-align: left;
-        font-weight: normal;
-        align-self: start;
-        transform: translate(20px, 20px);
-    }
-    
     #title_container{
         width: 100%;
         /* height: 100%; */
@@ -111,6 +99,17 @@
         font-family: 'Lora';
         font-size: max(15px, 1vw);
         margin-left: 10%;
+        text-align: right;
+    }
+
+    #about_me_link:hover span {
+        display: none
+    }
+
+    #about_me_link:hover:after {
+        content:"me";
+        text-align: right;
+        /* color: #CFA289; */
     }
 
     #project_start{
@@ -120,7 +119,7 @@
         font-weight: 400;
         align-self: center;
         width: 25%;
-        margin-left: 20%;
+        margin-left: 10%;
     }
 
     #project_link{
@@ -128,15 +127,16 @@
         align-self: center;
         font-family: 'Lora';
         font-size: max(15px, 1vw);
-        margin-left: 35%;
+        margin-left: 55%;
     }
 
-    #moon_container{
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        height: 80%;
+    #project_link:hover span {
+        display: none
+    }
+
+    #project_link:hover:after {
+        content:"more";
+        text-align: right;
     }
 
     #contact_container{
