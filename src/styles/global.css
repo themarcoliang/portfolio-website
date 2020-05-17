@@ -5,7 +5,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
 }
 
 html {
-    overflow: scroll;
+    overflow: hidden;
     overflow-y: hidden;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */

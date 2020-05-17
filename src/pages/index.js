@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import "../styles/index.css"
 import stairs from "../images/stairs.png"
-import moon from "../images/moon.jpg"
 import architecture from "../images/architecture.jpg"
 // import Img from "gatsby-image"
 
@@ -49,29 +48,22 @@ const IndexPage = () => (
   <Fragment>
     <SEO title="Home Page" />
     <div id="loader">
-        <h1>loading...</h1>
+        <h1>hi</h1>
     </div>
 
     <div class="page-container">
       <div id="page1" className="page">
-        <div id="left">
-          {/* <h4 id="clock">12:48 AM March 27, 2020</h4> */}
-        </div>
-        <div id="center">
             <div id="title_container">
                 <img src={stairs} alt="stairs" id="stairs_pic"/>
                 <h1 id="title"><span>MARCO &emsp;<br/>&emsp;LIANG</span></h1>
             </div>
-        </div>
         
-        <div id="right">
           <p id="subtitle" className="label new-label"><span>welcome.</span></p>
-        </div>
         
       </div>
       
       <div id="page2" className="page">
-        <p id="about_me">
+        <p id="about_me_top">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Praesent euismod mauris placerat neque rutrum, et 
           volutpat purus porta. Curabitur egestas in erat nec cursus. 
@@ -80,7 +72,8 @@ const IndexPage = () => (
           interdum ex. Quisque sit amet tincidunt libero, id pretium 
           leo. Pellentesque dictum molestie augue, a condimentum 
           est vulputate at.
-          <br/><br/>
+        </p>
+        <p id="about_me_bottom">
           Duis egestas interdum enim non elementum. Sed euismod 
           ipsum vel lectus interdum auctor eget quis turpis. Nulla 
           varius, ipsum sed eleifend commodo, urna ex pulvinar 
@@ -88,46 +81,27 @@ const IndexPage = () => (
           suscipit. Nunc sit amet erat a odio dapibus vestibulum 
           dapibus id arcu. Pellentesque egestas sem ut tortor dictum, 
         </p>
-
-        <h2 id="project_start_date">3 22 2020.</h2>
-
+        <Link id="about_me_link" to="/page-2">
+          About
+        </Link>
+      </div>
+      <div id="page3" className="page">
         <p id="project_start"> 
-            For Fuck's Sakes
-            <br/><br/>
-            Change this to some less cringey BS
+            I wanted to create a space  where I can showcase my 
+            work, and also an opportunity  for me to learn a bit 
+            more about web development
         </p>
 
-        <div id="moon_container">
-          <img src={moon} alt="stairs" id="moon_pic"/>
-          
-          <p id="project_link">
-              To learn more about some of my other projects,
-              <br/>press &nbsp;
-              <Link to="/page-2" style={{color:"white"}} activeStyle={{color:"red"}}>here</Link>
-          </p>
-        </div>
-        
-      </div>
+        <Link id="project_link" to="/page-2">View Other Work</Link>
       
-      <div id="page3" className="page">
-        <div id="contact_container">
-          <h1 id="contact_header">This is a work in progress<br/>See something broken? Something you don't like? <br/>Let me know!</h1>
+      </div>
 
-          <form id="contact_form" action="https://getform.io/f/7f1db3f9-c8ee-4d12-a6a5-3f3c05604cd3" method="POST">
-            
-            <input id="email_field" type="email" name="email" placeholder="email" required/>
-            {/* <label for="email_field">email</label> */}
-            <br/>
-            <input id="name_field" type="text" name="name" placeholder="name" required/>
-            {/* <label for="name_field">name</label> */}
-            <br/>
-            <input id="comment_field" type="text" name="comment" placeholder="comment" required/>
-            {/* <label for="message_field">message</label> */}
-            <br/>
-            <button type="submit">submit</button>
-          </form>
-          
+      <div id="page4" className="page">
+        <div id="contact_container">
+          <h1 id="contact_header">This is a work in progress<br/>See something broken? Something you don't like? <br/>Or...just for a chat?<br/>Let me know!</h1>
+          <a id="email_link" href="mailto:marcoliang333@gmail.com">marcoliang333@gmail.com</a>
         </div>
+       
         <img src={architecture} alt="architecture" id="architecture_pic"/>
       </div>
     </div>
