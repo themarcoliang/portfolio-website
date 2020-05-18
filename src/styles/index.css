@@ -78,7 +78,7 @@
         color: white;
         align-self: center;
         font-family: 'Lora';
-        font-size: max(8px, 0.8vw);      
+        font-size: max(8px, 1vw);      
         width: 30%;
         margin-bottom: 20%;
         margin-left: 10%;
@@ -88,7 +88,7 @@
         color: white;
         align-self: center;
         font-family: 'Lora';
-        font-size: max(8px, 0.8vw);
+        font-size: max(8px, 1vw);
         width: 30%;
         margin-left: 10%;
     }
@@ -115,11 +115,11 @@
     #project_start{
         color: white;
         font-family: 'Lora';
-        font-size: max(8px, 0.85vw);
+        font-size: max(8px, 1vw);
         font-weight: 400;
         align-self: center;
-        width: 25%;
-        margin-left: 10%;
+        width: 30%;
+        margin-left: 5%;
     }
 
     #project_link{
