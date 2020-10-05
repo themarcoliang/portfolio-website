@@ -1,0 +1,59 @@
+$title-font: "Playfair Display";
+$subtitle-font: "Lora", sans-serif;
+
+html, body{
+    font-family: $subtitle-font;
+    font-size: 16px;
+}
+
+.container{
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+    // @media(max-width: 1440px){
+    //     width: 1280px;
+    //     min-width: 1280px;;
+    // }
+    // @media(max-width: 1280px){
+    //     width: 976px;
+    //     min-width: 976px;;
+    // }
+    // @media(max-width: 976px){
+    //     width: 768px;
+    //     min-width: 768px;;
+    // }
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    border-bottom: 1px solid black;
+    color: black;
+    .inner-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        margin-right: 10%;
+        margin-left: 10%;
+        .logo{
+            a{
+                font-family: $subtitle-font;
+                text-decoration: none;
+            }
+        }
+        .contacts{
+            a{
+                margin: 0 20px;
+                font-family: $subtitle-font;
+                text-decoration: none;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
