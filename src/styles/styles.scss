@@ -66,3 +66,18 @@ header{
         }
     }
 }
+
+.intro{
+    p{
+        position: absolute;
+        font-family: $subtitle-font;
+        bottom: 50%;
+        left: 15%;
+    }
+    
+}
+
+mark.red{
+    color: red;
+    background: none;
+}
