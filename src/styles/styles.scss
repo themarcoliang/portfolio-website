@@ -12,6 +12,7 @@ header{
     position: absolute;
     top: 0px;
     z-index: 10; 
+    right: 0;
     .inner-header{
         display: flex;
         align-items: center;
@@ -26,6 +27,9 @@ header{
                 text-decoration: none;
                 color: black;
             }
+            a:active, a:hover{
+                color: red;
+            }
         }
         .contacts{
             a{
@@ -37,6 +41,28 @@ header{
                     margin-right: 0px;
                 }
             }
+            a:active, a:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+.navigation{
+    nav{
+        position: absolute;
+        bottom: 20%;
+        margin-left: 10%;
+        z-index: 10;
+        a:active, a:hover{
+            color: red;
+        }
+        a{
+            color: black;
+            font-family: $subtitle-font;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
         }
     }
 }
