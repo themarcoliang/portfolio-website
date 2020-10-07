@@ -11,7 +11,7 @@ export default function Header(){
                         <Link to="/">Marco Liang</Link>
                     </div>
                     <div className = "contacts">
-                        <Link to="https://github.com/themarcoliang" target="_blank">Github</Link>
+                        <Link to="https://github.com/themarcoliang" target="_blank">GitHub</Link>
                         <Link to="https://www.linkedin.com/in/marco-liang/" target="_blank">LinkedIn</Link>
                         <a href="mailto: marcoliang333@gmail.com">Email</a>
                         <Link to="/" target="_blank">Resume</Link>
@@ -19,6 +19,5 @@ export default function Header(){
                 </div>
             </div>
         </header>
-        
     )
 }

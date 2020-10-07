@@ -7,8 +7,8 @@ html, body{
 }
 
 .container{
-    width: 1640px;
-    min-width: 1640px;
+    // width: 1640px;
+    // min-width: 1640px;
     margin: 0 auto;
     // @media(max-width: 1440px){
     //     width: 1280px;
@@ -25,24 +25,24 @@ html, body{
 }
 
 header{
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: absolute;
     top: 0px;
-    z-index: 10;
-    border-bottom: 1px solid black;
-    color: black;
+    z-index: 10; 
     .inner-header{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100px;
+        height: 80px;
         margin-right: 10%;
         margin-left: 10%;
+        border-bottom: 1px solid black;
         .logo{
             a{
                 font-family: $subtitle-font;
                 text-decoration: none;
+                color: black;
             }
         }
         .contacts{
@@ -50,6 +50,7 @@ header{
                 margin: 0 20px;
                 font-family: $subtitle-font;
                 text-decoration: none;
+                color: black;
                 &:last-child{
                     margin-right: 0px;
                 }
