@@ -1,4 +1,4 @@
-$title-font: "Playfair Display";
+$title-font: "Playfair Display", serif, weight;
 $subtitle-font: "Lora", sans-serif;
 
 html, body{
@@ -69,12 +69,19 @@ header{
 
 .intro{
     p{
-        position: absolute;
         font-family: $subtitle-font;
+        position: absolute;
         bottom: 50%;
         left: 15%;
     }
-    
+    h1{
+        font-family: $title-font;
+        font-weight: 500;
+        font-size: 75px;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+    }
 }
 
 mark.red{
