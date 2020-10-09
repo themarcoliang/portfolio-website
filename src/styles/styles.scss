@@ -88,3 +88,49 @@ mark.red{
     color: red;
     background: none;
 }
+
+.list{
+    position: absolute;
+    left: 18%;
+    bottom: 50%;
+    button{
+        outline: none;
+        width: 300px;
+        height: 40px;
+        display: block;
+        background: none;
+        border: none;
+        color: black;
+        font-family: $subtitle-font;
+        font-size: 18px;
+        // border-bottom: 1px solid black;
+    }
+    button:hover{
+        color: red;
+        border-bottom: 1px solid red;
+    }
+}
+
+.name{
+    float: left;
+}
+.date{
+    float: right;
+}
+
+.projects{
+    p{
+        font-family: $subtitle-font;
+        position: absolute;
+        bottom: 50%;
+        right: 15%;
+    }
+    h1{
+        font-family: $title-font;
+        font-weight: 500;
+        font-size: 75px;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+    }
+}
