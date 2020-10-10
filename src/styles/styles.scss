@@ -111,6 +111,11 @@ mark.red{
     }
 }
 
+.active{
+    // span{
+        color: red;
+    // }
+}
 .name{
     float: left;
 }
@@ -118,7 +123,7 @@ mark.red{
     float: right;
 }
 
-.projects{
+#projects{
     p{
         font-family: $subtitle-font;
         position: absolute;

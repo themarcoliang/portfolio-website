@@ -8,11 +8,11 @@ export default function Home() {
     <div className="intro">
       <Header/>
       <p>
-          Hi! I'm Marco, a <mark class="red">Computer Engineering</mark> student at Simon Fraser <br/>
+          Hi! I'm Marco, a <mark className="red">Computer Engineering</mark> student at Simon Fraser <br/>
           University, with a minor in Computing Science, and I'm expected  <br/>
           to graduate in 2021. <br/>
           <br/>
-          Currently, I'm working as an iOS Development intern at <mark class="red">Rivian</mark>, but <br/>
+          Currently, I'm working as an iOS Development intern at <mark className="red">Rivian</mark>, but <br/>
           I'm always excited to learn about new opportunities, so feel free to <br/>
           get in touch with me through any of the channels linked above! <br/>
       </p>
