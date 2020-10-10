@@ -122,12 +122,6 @@ mark.red{
 }
 
 #projects{
-    p{
-        font-family: $subtitle-font;
-        position: absolute;
-        bottom: 50%;
-        right: 15%;
-    }
     h1{
         font-family: $title-font;
         font-weight: 500;
@@ -136,4 +130,12 @@ mark.red{
         bottom: 15%;
         right: 10%;
     }
+}
+
+.description{
+    position: absolute;
+    bottom: 50%;
+    right: 15%;
+    width: 500px;
+    font-family: $subtitle-font;
 }

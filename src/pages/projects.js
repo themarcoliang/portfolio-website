@@ -2,14 +2,14 @@ import React from "react"
 import Header from "../components/header"
 import Navigation from "../components/navigation"
 import "../styles/styles.scss"
-
+import * as data from "../data/projects.json"
 
 export default class Projects extends React.Component {
   constructor(){
     super();
     this.state = {
-      description: "default description",
-      title: "Default Title"
+      description: data.joergen.description,
+      title: data.joergen.title
     }
     // this.descriptionChange = this.descriptionChange.bind(this);
   }
@@ -26,41 +26,45 @@ export default class Projects extends React.Component {
         <Header/>
         <div className="list" id="project_list">
             <button className="button active" onClick={() => {
-              this.descriptionChange()
+              this.descriptionChange(data.joergen.description)
               this.titleChange("Joergen")}}>
-                <span className="name">Joergen</span>
-                <span className="date">05.2020</span>
+                <span className="name">{data.joergen.title}</span>
+                <span className="date">{data.joergen.date}</span>
             </button>
   
             <button className="button" onClick={() => {
-              this.descriptionChange("this is Paper Plane")
+              this.descriptionChange(data.paper_plane.description)
               this.titleChange("Paper Plane")}}>
-                <span className="name">Paper Plane</span>
-                <span className="date">04.2020</span>
+                <span className="name">{data.paper_plane.title}</span>
+                <span className="date">{data.paper_plane.date}</span>
             </button>
   
             <button className="button" onClick={() => {
-              this.descriptionChange("this is Reversi-AI")
+              this.descriptionChange(data.reversi_ai.description)
               this.titleChange("Reversi-AI")}}>
-                <span className="name">Reversi-AI</span>
-                <span className="date">07.2020</span>
+                <span className="name">{data.reversi_ai.title}</span>
+                <span className="date">{data.reversi_ai.date}</span>
             </button>
             
             <button className = "button" onClick={() => {
-              this.descriptionChange("this is RISC-V ExecUnit")
+              this.descriptionChange(data.risc_v_execunit.description)
               this.titleChange("RISC-V ExecUnit")}}>
-                <span className="name">RISC-V ExecUnit</span>
-                <span className="date">04.2020</span>
+                <span className="name">{data.risc_v_execunit.title}</span>
+                <span className="date">{data.risc_v_execunit.date}</span>
             </button>
   
             <button className = "button" onClick={() => {
-              this.descriptionChange("this is S-Talk")
+              this.descriptionChange(data.s_talk.description)
               this.titleChange("S-Talk")}}>
-                <span className="name">S-Talk</span>
-                <span className="date">02.2020</span>
+                <span className="name">{data.s_talk.title}</span>
+                <span className="date">{data.s_talk.date}</span>
             </button>
         </div>
-        <p>{this.state.description}</p>
+        <div className = "description">
+          <p>{this.state.description[0]}</p>
+          <p>{this.state.description[1]}</p>
+        </div>
+        
         <h1>{this.state.title}</h1>
         <Navigation/>
       </div>

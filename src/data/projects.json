@@ -1,0 +1,31 @@
+{
+    "joergen": {
+        "description": [
+            "A Discord bot that streams YouTube music, can be controlled through the iOS companion app. Built the bot itself using the Discord.js API,  YouTube API, and written in JavaScript.", 
+            
+            "The iOS companion app is written in Swift, implements SiriKit for the  voice commands. The app and bot communicates through a Websocket connection, and the bot itself is hosted on a Raspberry pi."
+        ],
+        "title": "Joergen",
+        "date": "05.2020"
+    },
+    "paper_plane": {
+        "description": ["1", "2"],
+        "title": "Paper Plane",
+        "date": "04.2020"
+    },
+    "reversi_ai": {
+        "description": ["1", "2"],
+        "title": "Reversi-AI",
+        "date": "07.2020"
+    },
+    "risc_v_execunit": {
+        "description": ["1", "2"],
+        "title": "RISC-V ExecUnit",
+        "date": "04.2020"
+    },
+    "s_talk": {
+        "description": ["1", "2"],
+        "title": "S-Talk",
+        "date": "02.2020"
+    }
+}
