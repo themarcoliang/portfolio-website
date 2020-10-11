@@ -93,7 +93,7 @@ mark.red{
     position: absolute;
     left: 18%;
     bottom: 50%;
-    button{
+    .button{
         outline: none;
         width: 300px;
         height: 40px;
@@ -105,20 +105,22 @@ mark.red{
         font-size: 18px;
         // border-bottom: 1px solid black;
     }
-    button:hover{
+    
+    .button:hover{
         color: red;
         border-bottom: 1px solid red;
     }
-}
-
-.active{
-    color: red;
-}
-.name{
-    float: left;
-}
-.date{
-    float: right;
+    
+    .active{
+        color: red;
+        border-bottom: 1px solid red;
+    }
+    .name{
+        float: left;
+    }
+    .date{
+        float: right;
+    }
 }
 
 #projects{
@@ -135,7 +137,7 @@ mark.red{
 .description{
     position: absolute;
     bottom: 50%;
-    right: 15%;
+    right: 12%;
     width: 500px;
     font-family: $subtitle-font;
 }
