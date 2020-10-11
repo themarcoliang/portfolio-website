@@ -1,0 +1,143 @@
+$title-font: "Playfair Display", serif, weight;
+$subtitle-font: "Lora", sans-serif;
+
+html, body{
+    font-family: $subtitle-font;
+    font-size: 16px;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 10; 
+    right: 0;
+    .inner-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        margin-right: 10%;
+        margin-left: 10%;
+        border-bottom: 1px solid black;
+        .logo{
+            a{
+                font-family: $subtitle-font;
+                text-decoration: none;
+                color: black;
+            }
+            a:active, a:hover{
+                color: red;
+            }
+        }
+        .contacts{
+            a{
+                margin: 0 20px;
+                font-family: $subtitle-font;
+                text-decoration: none;
+                color: black;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+            a:active, a:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+.navigation{
+    nav{
+        position: absolute;
+        bottom: 20%;
+        margin-left: 10%;
+        z-index: 10;
+        a:active, a:hover{
+            color: red;
+        }
+        a{
+            color: black;
+            font-family: $subtitle-font;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.intro{
+    p{
+        font-family: $subtitle-font;
+        position: absolute;
+        bottom: 50%;
+        left: 15%;
+    }
+    h1{
+        font-family: $title-font;
+        font-weight: 500;
+        font-size: 75px;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+    }
+}
+
+mark.red{
+    color: red;
+    background: none;
+}
+
+.list{
+    position: absolute;
+    left: 18%;
+    bottom: 50%;
+    .button{
+        outline: none;
+        width: 300px;
+        height: 40px;
+        display: block;
+        background: none;
+        border: none;
+        color: black;
+        font-family: $subtitle-font;
+        font-size: 18px;
+        // border-bottom: 1px solid black;
+    }
+
+    .button:hover{
+        color: red;
+        // border-bottom: 1px solid red;
+    }
+    
+    .active{
+        color: red;
+        border-bottom: 1px solid red;
+    }
+    .name{
+        float: left;
+    }
+    .date{
+        float: right;
+    }
+}
+
+#projects{
+    h1{
+        font-family: $title-font;
+        font-weight: 500;
+        font-size: 75px;
+        position: absolute;
+        bottom: 15%;
+        right: 10%;
+    }
+}
+
+.description{
+    position: absolute;
+    bottom: 50%;
+    right: 12%;
+    width: 500px;
+    font-family: $subtitle-font;
+}
