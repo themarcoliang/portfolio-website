@@ -12,7 +12,7 @@ export default class Projects extends React.Component {
       title: data.joergen.title,
       active: "joergen"
     }
-    // this.descriptionChange = this.descriptionChange.bind(this);
+    
   }
   updateDescription(newDescription) {
     this.setState({description: newDescription});
@@ -79,5 +79,5 @@ export default class Projects extends React.Component {
       </div>
     )}
   
-    
+
 }
